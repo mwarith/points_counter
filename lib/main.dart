@@ -4,17 +4,17 @@ import 'team.dart';
 int countA = 0, countB = 0;
 
 void main() {
-  runApp(const MyWidget());
+  runApp(const PointsCounter());
 }
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
+class PointsCounter extends StatefulWidget {
+  const PointsCounter({super.key});
 
   @override
-  State<MyWidget> createState() => _MyWidgetState();
+  State<PointsCounter> createState() => _PointsCounterState();
 }
 
-class _MyWidgetState extends State<MyWidget> {
+class _PointsCounterState extends State<PointsCounter> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,19 +32,19 @@ class _MyWidgetState extends State<MyWidget> {
         ),
         body: Column(
           children: [
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Team(
                   teamNum: 1,
                 ),
-                VerticalDivider(
-                  width: 20,
-                  thickness: 5,
-                  indent: 20,
-                  endIndent: 0,
-                  color: Colors.black,
-                ),
+                // const VerticalDivider(
+                //   width: 20,
+                //   thickness: 5,
+                //   indent: 20,
+                //   endIndent: 0,
+                //   color: Colors.black,
+                // ),
                 Team(
                   teamNum: 2,
                 ),

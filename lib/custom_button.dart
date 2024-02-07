@@ -24,7 +24,11 @@ class _CustomButtonState extends State<CustomButton> {
       child: ElevatedButton(
         onPressed: () {
           setState(() {
-            widget.teamNum == 1 ? countA += widget.add : countB += widget.add;
+            if (widget.teamNum == 1) {
+              countA += widget.add;
+            } else {
+              countB += widget.add;
+            }
           });
         },
         style: ButtonStyle(
