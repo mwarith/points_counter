@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'team.dart';
 
-int countA = 0, countB = 0;
 
 void main() {
   runApp(const PointsCounter());
@@ -38,13 +37,6 @@ class _PointsCounterState extends State<PointsCounter> {
                 Team(
                   teamNum: 1,
                 ),
-                // const VerticalDivider(
-                //   width: 20,
-                //   thickness: 5,
-                //   indent: 20,
-                //   endIndent: 0,
-                //   color: Colors.black,
-                // ),
                 Team(
                   teamNum: 2,
                 ),
